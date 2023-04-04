@@ -25,38 +25,16 @@
           
             <input type="submit" name="submit" value="Xác nhận"> 
           </form>
-          <script>
-            const form = document.getElementById('myForm');
-            const emailInput = form.querySelector('input[name="email"]');
-        
-            form.addEventListener('submit', (event) => {
-              // Check if the email is valid
-              if (!isValidEmail(emailInput.value)) {
-                // If it's not valid, prevent the form from submitting
-                event.preventDefault();
-                // Show an error message to the user
-                const errorText = form.querySelector('.error-text');
-                errorText.textContent = 'C';
-                alert("Địa chỉ email không hợp lệ")
-              }
-            });
-        
-            function isValidEmail(email) {
-              // Regular expression to match email format
-              const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-              return regex.test(email);
-            }
-          </script>
+          
           
         </div>
         
       
-      <div class="link">Chưa đăng ký? <a href="index.html">Đăng ký tại đây</a></div>
+      <div class="link">Chưa đăng ký? <a href="signin.html">Đăng ký tại đây</a></div>
     </section>
   </div>
   
-  <script src="javascript/pass-show-hide.js"></script>
-  <script src="assets/js/login.js"></script>
+
   
 
 </body>
