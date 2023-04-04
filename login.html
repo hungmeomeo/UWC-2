@@ -1,0 +1,63 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="form login">
+      <header>Đăng nhập hệ thống UWC 2.0</header>
+      <form id="myForm" action="index-2.html" method="POST" enctype="multipart/form-data" autocomplete="off">
+        <div class="error-text"></div>
+        <div class="field input">
+          <label>Tên đăng nhập</label>
+          <input type="text" name="email" placeholder="Tên đăng nhập" required>
+        </div>
+        <div class="field input">
+          <label>Mật khẩu</label>
+          <input type="password" name="password" placeholder="Mật khẩu" required>
+          <i class="fas solid fa-eye"></i>
+        </div>
+        <div class="field button">
+          
+            <input type="submit" name="submit" value="Xác nhận"> 
+          </form>
+          <script>
+            const form = document.getElementById('myForm');
+            const emailInput = form.querySelector('input[name="email"]');
+        
+            form.addEventListener('submit', (event) => {
+              // Check if the email is valid
+              if (!isValidEmail(emailInput.value)) {
+                // If it's not valid, prevent the form from submitting
+                event.preventDefault();
+                // Show an error message to the user
+                const errorText = form.querySelector('.error-text');
+                errorText.textContent = 'C';
+                alert("Địa chỉ email không hợp lệ")
+              }
+            });
+        
+            function isValidEmail(email) {
+              // Regular expression to match email format
+              const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+              return regex.test(email);
+            }
+          </script>
+          
+        </div>
+        
+      
+      <div class="link">Chưa đăng ký? <a href="index.html">Đăng ký tại đây</a></div>
+    </section>
+  </div>
+  
+  <script src="javascript/pass-show-hide.js"></script>
+  <script src="assets/js/login.js"></script>
+  
+
+</body>
+</html>

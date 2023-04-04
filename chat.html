@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- chat23:28-->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <div class="header">
+        <div class="header-left">
+          <a href="index-2.html" class="logo">
+            <span>UWC 2.0</span>
+          </a>
+        </div>
+        <a id="toggle_btn" href="javascript:void(0);"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <ul class="nav user-menu float-right">
+          <li class="nav-item dropdown d-none d-sm-block">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"
+              ><i class="fa fa-bell-o"></i>
+              <span class="badge badge-pill bg-danger float-right">3</span></a
+            >
+            <div class="dropdown-menu notifications">
+              <div class="topnav-dropdown-header">
+                <span>Notifications</span>
+              </div>
+              <div class="drop-scroll">
+                <ul class="notification-list">
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="media"></div>
+                    </a>
+                  </li>
+                  <li class="notification-message">
+                    <a href="activities.html">
+                      <div class="media"></div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="topnav-dropdown-footer">
+                <a href="activities.html">View all Notifications</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown d-none d-sm-block">
+            <a
+              href="javascript:void(0);"
+              id="open_msg_box"
+              class="hasnotifications nav-link"
+              ><i class="fa fa-comment-o"></i>
+              <span class="badge badge-pill bg-danger float-right">8</span></a
+            >
+          </li>
+          <li class="nav-item dropdown has-arrow">
+            <a
+              href="#"
+              class="dropdown-toggle nav-link user-link"
+              data-toggle="dropdown"
+            >
+              <span class="user-img">
+                <img
+                  class="rounded-circle"
+                  src="assets/img/user.jpg"
+                  width="24"
+                />
+                <span class="status online"></span>
+              </span>
+              <span>Hoang Hung</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="profile.html">My Profile</a>
+              <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+              <a class="dropdown-item" href="settings.html">Settings</a>
+              <a class="dropdown-item" href="login.html">Logout</a>
+            </div>
+          </li>
+        </ul>
+        <div class="dropdown mobile-user-menu float-right">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            aria-expanded="false"
+            ><i class="fa fa-ellipsis-v"></i
+          ></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="profile.html">My Profile</a>
+            <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+            <a class="dropdown-item" href="settings.html">Settings</a>
+            <a class="dropdown-item" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+          <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+              <li class="menu-title">Tổng quan</li>
+              <li class="active">
+                <a href="index-2.html"
+                  ><i class="fa fa-dashboard"></i>
+                  <span>Màn hình chính</span></a
+                >
+              </li>
+
+              <li class="submenu">
+                <a href="#"
+                  ><i class="fa fa-user"></i> <span> Nhân lực </span>
+                  <span class="menu-arrow"></span
+                ></a>
+                <ul style="display: none">
+                  <li><a href="employees.html">Nhân viên văn phòng</a></li>
+                  <li><a href="leaves.html">Nhân viên dọn dẹp</a></li>
+                  <li><a href="drivers.html">Nhân viên lái xe</a></li>
+                  <li><a href="vehicle.html">Phương tiện giao thông</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="calendar.html"
+                  ><i class="fa fa-calendar"></i> <span>Thời gian biểu</span></a
+                >
+              </li>
+              <li>
+                <a href="chat.html"
+                  ><i class="fa fa-comments"></i> <span>Chat</span>
+                  <span class="badge badge-pill bg-primary float-right"
+                    >3</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="activities.html"
+                  ><i class="fa fa-bell-o"></i> <span>Thông báo</span
+                  ><span class="badge badge-pill bg-primary float-right"
+                    >8</span
+                  ></a
+                >
+              </li>
+              <li class="menu-title">Phân công việc</li>
+
+              <li>
+                <a href="schedule.html"
+                  ><i class="fa fa-calendar-check-o"></i>
+                  <span>Lịch trình</span></a
+                >
+              </li>
+              <li>
+                <a href="departments.html"
+                  ><i class="fa fa-hospital-o"></i> <span>Địa điểm</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <div class="chat-main-row">
+          <div class="chat-main-wrapper">
+            <div class="col-lg-9 message-view chat-view">
+              <div class="chat-window">
+                <div class="fixed-header">
+                  <div class="navbar">
+                    <div class="user-details mr-auto">
+                      <div class="float-left user-img m-r-10">
+                        <a href="profile.html" title="Jennifer Robinson"
+                          ><img
+                            src="assets/img/patient-thumb-02.jpg"
+                            alt=""
+                            class="w-40 rounded-circle" /><span
+                            class="status online"
+                          ></span
+                        ></a>
+                      </div>
+                      <div class="user-info float-left">
+                        <a href="profile.html"
+                          ><span class="font-bold">Jennifer Robinson</span>
+                          <i class="typing-text">Typing...</i></a
+                        >
+                        <span class="last-seen"
+                          >Last seen today at 7:50 AM</span
+                        >
+                      </div>
+                    </div>
+                    <div class="search-box">
+                      <div class="input-group input-group-sm">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Search"
+                        />
+                        <span class="input-group-append">
+                          <button class="btn" type="button">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                    <ul class="nav custom-menu">
+                      <li class="nav-item">
+                        <a
+                          href="#chat_sidebar"
+                          class="nav-link task-chat profile-rightbar float-right"
+                          id="task_chat"
+                          ><i class="fa fa-user"></i
+                        ></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="voice-call.html"
+                          ><i class="fa fa-phone"></i
+                        ></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="video-call.html"
+                          ><i class="fa fa-video-camera"></i
+                        ></a>
+                      </li>
+                      <li class="nav-item dropdown dropdown-action">
+                        <a
+                          href="#"
+                          class="nav-link dropdown-toggle"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                          ><i class="fa fa-cog"></i
+                        ></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a class="dropdown-item" href="javascript:void(0)"
+                            >Delete Conversations</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0)"
+                            >Settings</a
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="chat-contents">
+                  <div class="chat-content-wrap">
+                    <div class="chat-wrap-inner">
+                      <div class="chat-box">
+                        <div class="chats">
+                          <div class="chat chat-right">
+                            <div class="chat-body">
+                              <div class="chat-bubble">
+                                <div class="chat-content">
+                                  <p>Chào bạn</p>
+                                  <span class="chat-time">8:35 am</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="chat chat-left">
+                            <div class="chat-avatar">
+                              <a href="profile.html" class="avatar">
+                                <img
+                                  alt="Jennifer Robinson"
+                                  src="assets/img/patient-thumb-02.jpg"
+                                  class="img-fluid rounded-circle"
+                                />
+                              </a>
+                            </div>
+                            <div class="chat-body">
+                              <div class="chat-bubble">
+                                <div class="chat-content">
+                                  <p>Typing ...</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-footer">
+                  <div class="message-bar">
+                    <div class="message-inner">
+                      <a
+                        class="link attach-icon"
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#drag_files"
+                        ><img src="assets/img/attachment.png" alt=""
+                      /></a>
+                      <div class="message-area">
+                        <div class="input-group">
+                          <textarea
+                            class="form-control"
+                            placeholder="Type message..."
+                          ></textarea>
+                          <span class="input-group-append">
+                            <button class="btn btn-primary" type="button">
+                              <i class="fa fa-send"></i>
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="drag_files" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Drag and drop files upload</h3>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                <form id="js-upload-form">
+                  <div class="upload-drop-zone" id="drop-zone">
+                    <i class="fa fa-cloud-upload fa-2x"></i>
+                    <span class="upload-text"
+                      >Just drag and drop files here</span
+                    >
+                  </div>
+                  <h4>Uploading</h4>
+                  <ul class="upload-list">
+                    <li class="file-list">
+                      <div class="upload-wrap">
+                        <div class="file-name">
+                          <i class="fa fa-photo"></i> photo.png
+                        </div>
+                        <div class="file-size">1.07 gb</div>
+                        <button type="button" class="file-close">
+                          <i class="fa fa-close"></i>
+                        </button>
+                      </div>
+                      <div class="progress progress-xs progress-striped">
+                        <div
+                          class="progress-bar bg-success"
+                          role="progressbar"
+                          style="width: 65%"
+                        ></div>
+                      </div>
+                      <div class="upload-process">37% done</div>
+                    </li>
+                    <li class="file-list">
+                      <div class="upload-wrap">
+                        <div class="file-name">
+                          <i class="fa fa-file"></i> task.doc
+                        </div>
+                        <div class="file-size">5.8 kb</div>
+                        <button type="button" class="file-close">
+                          <i class="fa fa-close"></i>
+                        </button>
+                      </div>
+                      <div class="progress progress-xs progress-striped">
+                        <div
+                          class="progress-bar bg-success"
+                          role="progressbar"
+                          style="width: 65%"
+                        ></div>
+                      </div>
+                      <div class="upload-process">37% done</div>
+                    </li>
+                    <li class="file-list">
+                      <div class="upload-wrap">
+                        <div class="file-name">
+                          <i class="fa fa-photo"></i> dashboard.png
+                        </div>
+                        <div class="file-size">2.1 mb</div>
+                        <button type="button" class="file-close">
+                          <i class="fa fa-close"></i>
+                        </button>
+                      </div>
+                      <div class="progress progress-xs progress-striped">
+                        <div
+                          class="progress-bar bg-success"
+                          role="progressbar"
+                          style="width: 65%"
+                        ></div>
+                      </div>
+                      <div class="upload-process">Completed</div>
+                    </li>
+                  </ul>
+                </form>
+                <div class="m-t-30 text-center">
+                  <button class="btn btn-primary submit-btn">
+                    Add to upload
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="add_group" class="modal fade">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title">Create a group</h3>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Groups are where your team communicates. They’re best when
+                  organized around a topic — #leads, for example.
+                </p>
+                <form>
+                  <div class="form-group">
+                    <label>Group Name <span class="text-danger">*</span></label>
+                    <input class="form-control" type="text" />
+                  </div>
+                  <div class="form-group">
+                    <label
+                      >Send invites to:
+                      <span class="text-muted-light">(optional)</span></label
+                    >
+                    <input class="form-control" type="text" />
+                  </div>
+                  <div class="m-t-50 text-center">
+                    <button class="btn btn-primary submit-btn">
+                      Create Group
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+
+  <!-- chat23:29-->
+</html>
